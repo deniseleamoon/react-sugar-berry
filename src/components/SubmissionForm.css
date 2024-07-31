@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(233, 227, 219);
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 0 5px 0;
+  color: rgb(82, 82, 82);
+  display: block;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-indent: 10px;
+}
+
+textarea {
+  height: 200px;
+  width: 100%;
+  margin: 5px 0 5px 0;
+  border-radius: 8px;
+  padding: 8px;
+  text-indent: 10px;
+}
+
+button {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 12px 32px;
+  background-color: rgb(20, 96, 96);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+button:hover {
+  background-color: rgb(2, 146, 146);
+}
+
+.thankYouMessage,
+.recipeNotSubmittedMessage {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  background-color: rgb(6, 45, 86);
+  border: 1px solid #ccc;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.startSharing {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  background-color: rgb(6, 45, 86);
+  border: 1px solid #ccc;
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+  border-radius: 15px 15px 0 0;
+  margin-top: 50px;
+}

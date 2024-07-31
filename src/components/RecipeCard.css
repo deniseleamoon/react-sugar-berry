@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(6, 26, 47);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: cursive;
+  font-weight: 200;
+  color: rgb(28, 165, 165);
+  background-color: white;
+  border: 5px solid gold;
+  box-shadow: 2px 2px 1px 1px rgb(230, 196, 3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.backgroundBottom {
+  background-color: rgba(0, 0, 0, 0.456);
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 254, 254, 0),
+    rgba(0, 19, 62, 0.665) 45%,
+    rgba(2, 23, 54, 0.678),
+    rgba(0, 0, 0, 0.765)
+  );
+}
+
+.recipe-card {
+  border-radius: 15px;
+  padding: 8px;
+  text-align: center;
+  background-color: rgb(252, 251, 249);
+  width: 600px;
+  border-top: 10px solid rgb(6, 45, 86);
+  border-bottom: 10px solid rgb(6, 45, 86);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 6px 1px #88888841;
+}
+
+.cardContainer {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 95%;
+  height: 500px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2px;
+}
+
+hr {
+  width: 50%;
+  height: 2px;
+  border: 0;
+  background: rgb(219, 128, 249);
+}
+
+li {
+  background-color: white;
+  text-align: left;
+  font-size: 1.2rem;
+  max-width: 6px 0;
+}
+
+.ingredientsTitle,
+.ingredientsTitle {
+  margin-top: 16px;
+}
+
+.emojiHeartBtn {
+  font-size: 2rem;
+  color: black;
+}
+
+.emojiHeartBtn:active {
+  color: red;
+}
+
+.clicked {
+  color: red;
+}
+
+img {
+  display: block;
+  width: 95%;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 10px;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 1px 5px 6px 1px #88888841;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 800;
+  /* color: rgb(161, 4, 172); */
+  padding: 10px;
+  /* background-color: rgb(220, 219, 216); */
+  color: white;
+  background-color: rgb(6, 45, 86);
+  width: 100%;
+  box-shadow: 1px 1px 6px 1px #88888841;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+hr {
+  width: 50%;
+  height: 2px;
+  border: 0;
+  background: rgb(238, 71, 238);
+}
+
+ol,
+ul,
+li {
+  background-color: white;
+  padding: 6px;
+  font-size: 1.2rem;
+}
+
+ul {
+  padding: 10px;
+}
+
+.ingredientsList {
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 2px 1px #88888841;
+}
+
+.instructionsList {
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 2px 1px #88888841;
+}
+
+.ingredientsTitle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.emojiHeartBtn {
+  font-size: 2rem;
+  color: black;
+}
+
+.emojiHeartBtn:active {
+  color: red;
+}
+
+.clicked {
+  color: red;
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .recipes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .recipes {
+    flex-direction: column;
+    align-items: center;
+  }
+}

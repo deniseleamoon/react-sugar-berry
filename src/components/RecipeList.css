@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(6, 26, 47);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: cursive;
+  font-weight: 200;
+  color: rgb(28, 165, 165);
+  background-color: white;
+  border: 5px solid gold;
+  box-shadow: 2px 2px 1px 1px rgb(230, 196, 3);
+}
+
+.backgroundBottom {
+  background-color: rgba(0, 0, 0, 0.456);
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 254, 254, 0),
+    rgba(0, 19, 62, 0.665) 45%,
+    rgba(2, 23, 54, 0.678),
+    rgba(0, 0, 0, 0.765)
+  );
+}

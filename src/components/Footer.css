@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.copyRight,
+.aboutUs,
+.contactUs {
+  font-size: 1rem;
+  color: gold;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-between;
+  /* text-align: center; */
+  padding: 30px;
+}
+
+.footerContainer .copyRight {
+  margin-right: auto;
+}
+
+.centeredContainer {
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
+  gap: 50px;
+  /* flex-grow: 1; */
+}
+
+.socialMediaIconsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+  /* padding-left: 90px; */
+}
