@@ -32,15 +32,15 @@ git clone https://github.com/your-username/sugar-berry-app.git
 
 ### 2. Navigate to the Project Directory
 
-- \*\*cd sugar-berry-app
+- cd sugar-berry-app
 
 ### 3. Install Dependencies
 
-- \*\*npm install
+- npm install
 
 ### 4. Start the Development Server
 
-- \*\*npm run dev
+- npm run dev
 
 ## Technologies Used
 
