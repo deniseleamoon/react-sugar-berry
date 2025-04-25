@@ -1,6 +1,6 @@
 # Sugar Berry Recipe Sharing Platform 🍓
 
-[![Production Status](https://img.shields.io/badge/Production-Secure-brightgreen)]()  
+[![Production Status](https://img.shields.io/badge/Production-Secure-brightgreen)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Introduction
