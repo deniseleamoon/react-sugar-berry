@@ -1,5 +1,10 @@
 # Sugar Berry Recipe Sharing Platform 🍓
 
+[![Production Status](https://img.shields.io/badge/Production-Secure-brightgreen)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+## Introduction
+
 ## Introduction
 
 **Sugar Berry** is a modern front-end web application designed for food enthusiasts to share and explore delicious recipes. Built with React and Vite, Sugar Berry offers an intuitive interface and dynamic user experience for recipe discovery and interaction.
@@ -24,39 +29,60 @@
 
 To set up Sugar Berry on your local machine, follow these steps:
 
-### 1. **Clone the Repository**
+### 1. Clone the Repository
 
-```bash
 git clone https://github.com/your-username/sugar-berry-app.git
-```
 
 ### 2. Navigate to the Project Directory
 
-- cd sugar-berry-app
+cd sugar-berry-app
 
 ### 3. Install Dependencies
 
-- npm install
+npm install
 
 ### 4. Start the Development Server
 
-- npm run dev
+npm run dev
 
 ## Technologies Used
 
-**React:** JavaScript library for building user interfaces.
-**Vite:** Fast build tool and development server.
-**ESLint:** Linting utility for identifying and fixing problems in your code.
-**phosphor-react:** Collection of customizable icons for React.
+### 1. React
+
+- JavaScript library for building user interfaces.
+
+### 2. Vite
+
+- Fast build tool and development server.
+
+### 3. ESLint
+
+- Linting utility for identifying and fixing problems in your code.
+
+### 4. phosphor-react
+
+- Collection of customizable icons for React.
 
 ## Usage
 
-**Submit Recipes:** Use the form to add new recipes to the platform.
-**View Recipes:** Browse through the recipes displayed on the main page.
-**Like Recipes:** Click the "Like" button on any recipe card to show appreciation.
+### 1. Submit Recipes
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+- Use the form to add new recipes to the platform.
 
-Contact
-For any questions or support, please reach out to deniseleamoon.com.
+### 2. View Recipes
+
+- Browse through the recipes displayed on the main page.
+
+### 3. Like Recipes
+
+- Click the "Like" button on any recipe card to show appreciation.
+
+## Deployment Notes
+
+- All production dependencies pass `npm audit --omit=dev`.
+- Remaining moderate vulnerabilities are dev-only and linked to Vite tooling, which does not affect the deployed app or its security.
+- This project uses locked dependency versions for stability and consistent installs across environments.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
