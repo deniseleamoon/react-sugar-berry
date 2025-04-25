@@ -17,7 +17,7 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: rgb(233, 227, 219);
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ button:hover {
   color: white;
   background-color: rgb(6, 45, 86);
   border: 1px solid #ccc;
-  width: 80%;
+  width: 75%;
   padding: 20px;
   margin: auto;
   margin-bottom: 20px;
@@ -95,7 +95,7 @@ button:hover {
   color: white;
   background-color: rgb(6, 45, 86);
   border: 1px solid #ccc;
-  width: 80%;
+  width: 75%;
   padding: 30px;
   margin: auto;
   border-radius: 15px 15px 0 0;

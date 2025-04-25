@@ -5,12 +5,14 @@ import RecipeList from "./RecipeList";
 
 function SubmissionForm({ onNewRecipeSubmit, recipes }) {
   const [recipeName, setRecipeName] = useState("");
+  const [description, setDescription] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [instructions, setInstructions] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const [recipeNameError, setRecipeNameError] = useState("");
+  const [descriptionError, setDescriptionError] = useState("");
   const [ingredientsError, setIngredientsError] = useState("");
   const [instructionsError, setInstructionsError] = useState("");
   const [imageUrlError, setImageUrlError] = useState("");
@@ -19,11 +21,21 @@ function SubmissionForm({ onNewRecipeSubmit, recipes }) {
   const handleRecipeName = (event) => {
     const { value } = event.target;
     if (!value.trim()) {
-      setRecipeNameError("Please enter ingredients.");
+      setRecipeNameError("Please enter a recipe name.");
     } else {
       setRecipeNameError("");
     }
     setRecipeName(value);
+  };
+
+  const handleDescription = (event) => {
+    const { value } = event.target;
+    if (!value.trim()) {
+      setDescriptionError("Please enter description.");
+    } else {
+      setDescriptionError("");
+    }
+    setDescription(value);
   };
 
   const handleIngredients = (event) => {
@@ -48,8 +60,12 @@ function SubmissionForm({ onNewRecipeSubmit, recipes }) {
 
   const handleImageUrl = (event) => {
     const { value } = event.target;
-    if (value === "") {
-      setImageUrlError("Please enter a valid URL.");
+    const urlPattern = /^(https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp))$/i;
+
+    if (!value.match(urlPattern)) {
+      setImageUrlError(
+        "Please enter a valid image URL (png, jpg, jpeg, gif, webp)."
+      );
     } else {
       setImageUrlError("");
     }
@@ -58,18 +74,31 @@ function SubmissionForm({ onNewRecipeSubmit, recipes }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (ingredientsError || instructionsError || imageUrlError) {
+    if (
+      descriptionError ||
+      ingredientsError ||
+      instructionsError ||
+      imageUrlError
+    ) {
       setFormError("Please use valid information.");
       return;
     }
 
     setFormError(null);
 
-    const newRecipe = { recipeName, ingredients, instructions, imageUrl };
+    const newRecipe = {
+      recipeName,
+      description,
+      ingredients,
+      instructions,
+      imageUrl,
+    };
     onNewRecipeSubmit(newRecipe);
 
     // console.log("Recipe Name:", recipeName);
     setRecipeName("");
+    // console.log("Decription:", description);
+    setDescription("");
     // console.log("Ingredients:", ingredients);
     setIngredients("");
     // console.log("Instructions:", instructions);
@@ -82,6 +111,7 @@ function SubmissionForm({ onNewRecipeSubmit, recipes }) {
   const resetForm = () => {
     setFormSubmitted(false);
     setRecipeName("");
+    setDescription("");
     setIngredients("");
     setInstructions("");
     setImageUrl("");
@@ -108,6 +138,23 @@ function SubmissionForm({ onNewRecipeSubmit, recipes }) {
           />
           {recipeNameError && <p className="errorMessage">{recipeNameError}</p>}
         </div>
+
+        <div className="description">
+          <label htmlFor="description">Description:</label>
+          <textarea
+            name="description"
+            type="text"
+            required
+            id="description"
+            placeholder="Enter a fun description."
+            onChange={handleDescription}
+            value={description}
+          ></textarea>
+          {descriptionError && (
+            <p className="errorMessage">{descriptionError}</p>
+          )}
+        </div>
+
         <div className="ingredients">
           <label htmlFor="ingredients">Ingredients:</label>
           <textarea
@@ -123,6 +170,7 @@ function SubmissionForm({ onNewRecipeSubmit, recipes }) {
             <p className="errorMessage">{ingredientsError}</p>
           )}
         </div>
+
         <div>
           <label htmlFor="instructions">Instructions:</label>
           <textarea

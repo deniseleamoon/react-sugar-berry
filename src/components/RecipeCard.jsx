@@ -5,6 +5,11 @@ import { useState } from "react";
 function RecipeCard({ recipe }) {
   const [clicked, setClicked] = useState(false);
 
+  const descriptionList = [];
+  for (const description of recipe.ingredients.split(",")) {
+    descriptionList.push(<li key={description}>{description}</li>);
+  }
+
   const ingredientList = [];
   for (const ingredient of recipe.ingredients.split(",")) {
     ingredientList.push(<li key={ingredient}>{ingredient}</li>);
@@ -25,17 +30,18 @@ function RecipeCard({ recipe }) {
         <div className="recipe-card">
           <h3>{recipe.recipeName}</h3>
           <img src={recipe.imageUrl} alt={`${recipe.recipeName} image`} />
-          <h4 className="ingredientsTitle">Ingredients</h4>
+          <p>{recipe.description}</p>
+          {/* <h4 className="ingredientsTitle">Ingredients</h4>
           <hr></hr>
           <div className="ingredientsList">
             <ul>{ingredientList}</ul>
-          </div>
+          </div> */}
 
-          <h4 className="instructionsTitle">Instructions</h4>
+          {/* <h4 className="instructionsTitle">Instructions</h4>
           <hr></hr>
           <div className="instructionsList">
             <ol>{instructionList}</ol>
-          </div>
+          </div> */}
 
           <h4
             className={clicked ? "emojiHeartBtn clicked" : "emojiHeartBtn"}

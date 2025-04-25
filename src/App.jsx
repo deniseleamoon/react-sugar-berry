@@ -14,7 +14,7 @@ function App() {
     <>
       <div className="backgroundContainer">
         <div className="titleContainer">
-          <h2 className="shareRecipeHeaderTitle">Suga Plum </h2>
+          <h2 className="shareRecipeHeaderTitle">Sugar Berry</h2>
           <span className="recipeHeaderTitle">
             Share Your Favorite Recipes{" "}
             <span className="strawberry">&#127827;</span>
