@@ -83,6 +83,32 @@ npm run dev
 - Remaining moderate vulnerabilities are dev-only and linked to Vite tooling, which does not affect the deployed app or its security.
 - This project uses locked dependency versions for stability and consistent installs across environments.
 
+## Future Enhancements
+
+### 1. Enhance the Recipe Form
+
+- Add more input fields (e.g., cooking time, ingredients list, category tags).
+
+### 2. Implement Recipe Categories
+
+- Allow users to filter recipes by categories (e.g., Desserts, Breakfast, Vegan).
+
+### 3. Add Local Storage
+
+- Save user-submitted recipes temporarily using `localStorage`.
+
+### 4. Polish UI/UX
+
+- Add subtle animations when submitting recipes or liking posts.
+
+### 5. Build a Simple Dashboard
+
+- Manage recipes (Create, Read, Update, Delete operations).
+
+### 6. Deploy the App
+
+- Launch Sugar Berry publicly using Netlify or Vercel.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
