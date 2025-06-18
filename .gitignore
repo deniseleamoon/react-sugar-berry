@@ -7,18 +7,27 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency and build output
 node_modules
 dist
 dist-ssr
+.vite
 *.local
 
-# Editor directories and files
+# macOS system files
+.DS_Store
+._*
+
+# Editor and project files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables (optional)
+.env
+.env.*
